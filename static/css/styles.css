@@ -7,14 +7,18 @@
 }
 
 body {
-    background-color: #000;
+    background-image: url('../images/background.png'); /* Fondo futurista */
+    background-size: cover;       /* Ajusta al tamaño completo de la pantalla */
+    background-repeat: no-repeat; /* Evita la repetición */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-position: center;  /* Centrado */
     color: #fff;
     text-align: center;
 }
 
 /* Navbar */
 header {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.9); /* Semi-transparente */
     border-bottom: 2px solid red;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
 }
@@ -57,7 +61,7 @@ h1 {
 }
 
 .meme-card {
-    background: #111;
+    background: rgba(17, 17, 17, 0.8); /* Semi-transparente */
     border: 2px solid red;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
