@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
 </head>
 <body>
-    <h1>Galería de Memes</h1>
-    <div class="gallery">
-        {% for meme in memes %}
-        <div class="meme-card">
-            <a href="{{ meme.link }}" target="_blank">
-                <img src="{{ url_for('static', path=meme.src) }}" alt="{{ meme.alt }}">
-            </a>
-        </div>
-        {% endfor %}
-    </div>
-    <footer>
-        <h3>Síguenos en Redes Sociales</h3>
-        <ul>
-            {% for name, link in social_links.items() %}
-            <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Galería de Memes</h1>
+        <div class="gallery">
+            {% for meme in memes %}
+            <div class="meme-card">
+                <a href="{{ meme.link }}" target="_blank">
+                    <img src="{{ url_for('static', path=meme.src) }}" alt="{{ meme.alt }}">
+                </a>
+            </div>
             {% endfor %}
-        </ul>
-    </footer>
+        </div>
+    </main>
 </body>
 </html>
