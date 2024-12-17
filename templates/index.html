@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
-                <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+                <li><a href="{{ social_links['Twitter'] }}" target="_blank">Twitter</a></li>
+                <li><a href="{{ social_links['Instagram'] }}" target="_blank">Instagram</a></li>
+                <li><a href="{{ social_links['Facebook'] }}" target="_blank">Facebook</a></li>
             </ul>
         </nav>
     </header>
@@ -31,5 +31,10 @@
             {% endfor %}
         </div>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Síguenos en nuestras redes sociales</p>
+    </footer>
 </body>
 </html>
