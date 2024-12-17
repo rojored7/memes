@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     margin: 0;
 }
 
@@ -17,17 +17,30 @@ h1 {
     margin-top: 20px;
 }
 
-.meme-card {
-    border: 2px solid #ccc;
+.meme-card img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
     border-radius: 10px;
-    background-color: #fff;
-    overflow: hidden;
-    width: 250px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.meme-card img {
-    width: 100%;
-    display: block;
-    border-bottom: 2px solid #ccc;
+footer {
+    margin-top: 30px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
 }
