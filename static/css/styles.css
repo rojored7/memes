@@ -7,18 +7,19 @@
 }
 
 body {
-    background-image: url('/static/images/background.png'); /* Imagen de fondo */
-    background-size: cover;       /* Ajustar al tamaño de pantalla */
-    background-repeat: no-repeat; /* No repetir */
-    background-attachment: fixed; /* Fondo fijo */
+    background-image: url('/static/images/background.png'); /* Ruta de fondo */
+    background-size: cover;       /* Ajusta al tamaño de pantalla */
+    background-repeat: no-repeat; /* Evita la repetición */
+    background-attachment: fixed; /* Fija el fondo */
     background-position: center;  /* Centrado */
-    color: #fff;
+    color: #fff;                  /* Texto en blanco */
     text-align: center;
+    min-height: 100vh;            /* Ajustar a la altura completa de la pantalla */
 }
 
 /* Navbar */
 header {
-    background-color: rgba(34, 34, 34, 0.9); /* Semi-transparente */
+    background-color: rgba(34, 34, 34, 0.9);
     border-bottom: 2px solid red;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
 }
@@ -83,4 +84,5 @@ h1 {
 footer {
     margin-top: 30px;
     color: red;
+    font-size: 1.2em;
 }
