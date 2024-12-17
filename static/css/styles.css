@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('../images/background.png'); /* Fondo futurista */
+    background-image: url('../images/background.png'); /* Ruta corregida */
     background-size: cover;       /* Ajusta al tamaño completo de la pantalla */
     background-repeat: no-repeat; /* Evita la repetición */
     background-attachment: fixed; /* Fondo fijo al hacer scroll */
